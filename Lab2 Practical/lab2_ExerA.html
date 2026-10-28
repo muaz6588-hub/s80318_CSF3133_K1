@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Programming Workshop 2026</title>
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <h1>Programming Workshop</h1>
+    </header>
+
+    <!-- Navigation Section -->
+    <nav>
+       
+		    <a href="#schedule">Event Schedule</a>
+			<a href="#register">Registration</a>
+            <a href="#about">About the Event</a>
+        
+    </nav>
+
+    <!-- About Section -->
+    <section id="about">
+        <h2>About the Event</h2>
+        
+        <article>
+            <h3>Keynote Speaker: DR. Amir Ngah</h3>
+            <p>Dr. Amir will share about the future of software engineering.</p>
+        </article>
+
+        <article>
+            <h3>Hackathon</h3>
+            <p>Participants will collaborate in teams to build a working prototype addressing real-world campus challenges.</p>
+        </article>
+    </section>
+
+    <!--Event Schedule-->
+    <section id="schedule">
+       <h2>Event Schedule</h2>
+	   <table border="1">
+	    <tr>
+           <th>Time</th>
+           <th>Activity</th>
+           <th>Vanue</th>
+		   <th>Person in Charge</th>
+        </tr>
+		
+        <tr>
+           <td>8:30 AM - 9.00 AM</td>
+           <td>Registration of Participant</td>
+           <td>UMTCC</td>
+		   <td>Logistic Team</td>
+        </tr>
+       
+	   <tr>
+           <td>9.00 AM - 9.30 AM</td>
+           <td>Opening Speech</td>
+           <td>UMTCC</td>
+		   <td>Dr.Amir Ngah</td>
+        </tr>
+		
+		<tr>
+           <td>9.30 AM - 11.30 AM</td>
+           <td>Hackathon Coding Session</td>
+           <td>UMTCC</td>
+		   <td>Dr.Nazihah</td>
+        </tr>
+		
+		<tr>
+           <td>11.30 AM - 12.30 AM</td>
+           <td>Lunch Break</td>
+           <td>UMTCC</td>
+		   <td>Dr.Najihah</td>
+        </tr>
+		
+		<tr>
+           <td>12.30 AM - 2.00 AM</td>
+           <td>Closing and Prize Giving</td>
+           <td>UMTCC</td>
+		   <td>Dr.Amir Ngah</td>
+        </tr>
+       </table>
+    </section>
+	
+	<!--Registration Section -->
+    <section id="register">
+        <h2>Registration Form</h2>
+        <form action="register.html" method="post">
+            <div>
+                <label for="fullname">Full Name:</label><br>
+                <input type="text" id="fullname" name="fullname" required>
+            </div>
+            <br>
+            <div>
+                <label for="matric">Matric Number:</label><br>
+                <input type="text" id="matric" name="matric" required>
+            </div>
+            <br>
+            <div>
+                <label for="email">E-mail:</label><br>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <br>
+            <div>
+                <label>Year of Study:</label><br>
+                <input type="radio" id="year1" name="year_of_study" value="Year 1">
+                <label for="year1">Year 1</label><br>
+                <input type="radio" id="year2" name="year_of_study" value="Year 2">
+                <label for="year2">Year 2</label><br>
+                <input type="radio" id="year3" name="year_of_study" value="Year 3">
+                <label for="year3">Year 3</label><br>
+                <input type="radio" id="year4" name="year_of_study" value="Year 4">
+                <label for="year4">Year 4</label>
+            </div>
+            <br>
+            <div>
+                <label>Sessions to Join (Select at least 3):</label><br>
+                <input type="checkbox" id="session1" name="sessions" value="Keynote">
+                <label for="session1">Opening Speech</label><br>
+                <input type="checkbox" id="session2" name="sessions" value="Workshop">
+                <label for="session2">Hackathon Coding Session</label><br>
+                <input type="checkbox" id="session3" name="sessions" value="Hackathon">
+                <label for="session3">Closing and Prize Giving</label>
+            </div>
+            <br>
+            <div>
+                <label for="faculty">Programme or Faculty:</label><br>
+                <select id="faculty" name="faculty">
+				    <option value="Choose">Choose Programe</option>
+                    <option value="csmi">Computer Science with Maritime Informatic</option>
+                    <option value="csse">Computer Science Software Engineering</option>
+                    <option value="cscc">Computer Science Cloud Computing</option>
+                    <option value="csnc">Computer Science Networking and Cyber Security</option>
+                </select>
+            </div>
+            <br>
+            <div>
+                <input type="submit" value="Register Now">
+            </div>
+        </form>
+    </section>
+	
+    <!-- Footer Section -->
+    <footer>
+        <p>Organised by Faculty of Computer Science and Mathematic &copy; 2026. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>

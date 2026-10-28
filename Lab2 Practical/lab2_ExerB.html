@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Course Feedback</title>
+</head>
+<body>
+<header>
+    <h1>CSF3133 Course Feedback</h1>
+</header>
+<nav>
+    <a href="#results">Results</a> | <a href="#form">Feedback Form</a>
+</nav>
+<section id="results">
+    <h2>Feedback Summary</h2>
+    <table border="1">
+        <tr>
+            <th>Week</th><!--Line 18-21: Missing closing tags or incorrect tags. <td>Rating</td> should be an <th> header cell for consistency.-->
+            <th>Topic</th>
+            <th>Rating</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>Introduction to HTML</td>
+            <td>4.5</td> <!--Line 25-26: Missing closing </tr> tag for the row containing Introduction to HTML.-->
+        </tr>
+		<tr>
+            <td>2</td>
+            <td>Tables and Forms</td><!--Line 28: <td colspan="3">Tables and Forms</td> spans 3 columns, but the table only has 3 columns total (Week, Topic, Rating). Spanning 3 columns pushes layout awkwardly; fixed to colspan="2" for the Topic cell as required in Part 2.-->
+			<td>3</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>Semantic HTML</td>
+			<td>4.0</td><!--Line 32: Missing closing </tr> tag for the row containing Semantic HTML, and missing closing </td> tag after <td tabindex="..."> or similar syntax error.
+      5. Line 49: Typo in closing form tag </from> should be </form>.-->
+        </tr>
+    </table>
+</section>
+<section id="form">
+    <h2>Give Your Feedback</h2>
+    <form action="submit_feedback.php" method="post">
+        <label for="name">Name:</label>
+        <input type="text" id="fullname" name="name"><br>
+        <label for="good">Overall rating:</label><br>
+        <input type="radio" id="good" name="good" value="good">
+        <label for="good">Good</label>
+        <input type="radio" id="poor" name="poor" value="poor">
+        <label for="poor">Poor</label><br>
+        <input type="checkbox" id="lab" name="lab" value="yes">
+        <label for="labs">I attended all labs</label><br>
+        <input type="submit" value="Submit">
+    </form><!--Line 49: Typo in closing form tag </from> should be </form>-->
+</section>
+<footer>
+    <p>Copyright &copy; 2026 CSF3133</p>
+</footer>
+</body>
+</html>
+<!--
+6. Line 52: Missing closing semicolon in entity reference &copy; (written as &copy 2026).
+    -->
