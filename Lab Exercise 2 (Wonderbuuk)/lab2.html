@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Lab Exercise 2 - Personal Profile</title>
+</head>
+<body>
+
+    <!-- 3. Semantic Tags: <header> & <nav> -->
+    <header>
+        <h1>Personal Profile Page</h1>
+    </header>
+
+    <nav>
+        <a href="#table-section">Profile Table</a> | 
+        <a href="#form-section">User Form</a>
+    </nav>
+
+    <!-- 3. Semantic Tag: <section> & <article> -->
+    <section id="table-section">
+        <article>
+            <h2>Personal Information</h2>
+            <!-- 1. Table with 3 rows and 3 columns -->
+            <table border="1">
+                <tr>
+                    <th>Name</th>
+                    <th>Age</th>
+                    <th>Occupation</th>
+                </tr>
+                <tr>
+                    <td>Muhammad Muadz</td>
+                    <td>23</td>
+                    <td>Student</td>
+                </tr>
+                <tr>
+                    <td>Muhammad Muadz</td>
+                    <td>35</td>
+                    <td>Developer</td>
+                </tr>
+            </table>
+        </article>
+    </section>
+
+    <!-- 2. Simple Form -->
+    <section id="form-section">
+        <h2>User Information Form</h2>
+        <form action="#">
+            <!-- Text inputs -->
+            <label for="name">Name:</label><br>
+            <input type="text" id="name" name="name"><br><br>
+
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email"><br><br>
+
+            <!-- Radio buttons for Gender -->
+            <label>Gender:</label><br>
+            <input type="radio" id="male" name="gender" value="male">
+            <label for="male">Male</label>
+            <input type="radio" id="female" name="gender" value="female">
+            <label for="female">Female</label><br><br>
+
+            <!-- Checkboxes for Hobbies -->
+            <label>Favorite Hobbies:</label><br>
+            <input type="checkbox" id="sports" name="hobby" value="sports">
