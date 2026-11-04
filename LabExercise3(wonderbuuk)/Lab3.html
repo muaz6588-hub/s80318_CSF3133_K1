@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab 3 - Interactive Contact Form & Calculator</title>
+</head>
+<body>
+
+    <!-- 1. Header Section -->
+    <div>
+        <h1>Welcome to Interactive Contact Form with an Inline Calculator   <span>- Let's calculate instantly!</span></h1>
+    </div>
+
+    <!-- 2. Content Section -->
+    <div>
+        <!-- Contact Form Sub-Section -->
+        <div>
+            <h2>Contact Form</h2>
+            <form action="#" method="post">
+                <p>
+                    <label for="email">Email Address:</label><br>
+                    <input type="email" id="email" name="email" required>
+                </p>
+                <p>
+                    <label for="contact-date">Preferred Contact Date:</label><br>
+                    <input type="date" id="contact-date" name="contact-date">
+                </p>
+                <p>
+                    <label for="satisfaction">Satisfaction Level (1 to 10):</label><br>
+                    <input type="range" id="satisfaction" name="satisfaction" min="1" max="10" value="5">
+                </p>
+                <p>
+                    <input type="submit" value="Submit">
+                </p>
+            </form>
+        </div>
+
+        <!-- Inline Calculator Sub-Section -->
+        <div>
+            <h2>Inline Calculator</h2>
+            <form oninput="result.value = parseFloat(num1.value || 0) + parseFloat(num2.value || 0)">
+                <p>
+                    <label for="num1">Number 1:</label>
+                    <input type="number" id="num1" name="num1" value="0">
+                </p>
+                <p>
+                    <label for="num2">Number 2:</label>
+                    <input type="number" id="num2" name="num2" value="0">
+                </p>
+                <p>
+                    <strong>Sum:</strong> <output name="result" for="num1 num2">0</output>
+                </p>
+            </form>
+        </div>
+    </div>
+
+    <!-- 3. Footer Section -->
+    <div>
+        <p>Contact us at example@example.com | &copy; 2026 Interactive Web Lab. All rights reserved.</p>
+    </div>
+
+</body>
+</html>
