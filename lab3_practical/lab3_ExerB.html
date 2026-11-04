@@ -1,0 +1,43 @@
+<!DOCTYPE html><!--missing `html` in `<!DOCTYPE>` -> corrected to `<!DOCTYPE html>`-->
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Ticket Booking</title>
+</head>
+<body>
+<div id="header">
+    <h1>e-Ticket <span>Your Campus Cinema</span></h1><!--mismatched closing tags `</h1></span>` -> corrected to `</span></h1>`-->
+</div>
+<div id="content"><!--incorrect use of `<span id="content">` and `</span>` -> corrected to `<div id="content">` and `</div>`-->
+    <h2>Book Your Ticket</h2>
+    <p>Promotion: tickets RM10 for students & staff!</p><!--unescaped `<` and missing semicolon in `&amp` -> corrected to `&lt;` and `&amp;`-->
+    <form action="booking.php" oninput="total.value = adult.value + child.value">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" placeholder="Enter your name" required autofocus><br>
+        <label for="email">E-mail:</label>
+        <input type="email" id="email" name="email"><br><!--misspelled input type `type="emial"` -> corrected to `type="email"`-->
+        <label for="date">Show date:</label>
+        <input type="date" id="date" name="date"><br>
+        <label for="movie">Movie:</label>
+        <input id="movie" name="movie" list="movielist"><br><!--input list attribute `movies` mismatch with datalist id `movielist` -> corrected to `movielist`-->
+        <datalist id="movielist">
+            <option value="Space Rangers">
+            <option value="Kampung Comedy">
+        </datalist>
+        <label for="adult">Adult tickets:</label>
+        <input type="number" id="adult" name="adult" value="0"><br>
+        <label for="child">Child tickets:</label>
+        <input type="number" id="child" name="child" value="0"><br>
+        <label for="rating">Rate our service:</label>
+        <input type="range" id="rating" name="rating" min="5" max="1" step="1"><br>
+        Total tickets: <output name="total" for="adult child"></output><br><!--output `for` attribute referenced `adult kid` instead of `adult child` -> corrected to `adult child`-->
+        <input type="submit" value="Book Now">
+    </form>
+</div><!--incorrect use of `<span id="content">` and `</span>` -> corrected to `<div id="content">` and `</div>`-->
+<div id="footer">
+    <p>&copy; 2026 CineKampus. All rights reserved.</p> <!--uppercase entity `&Copy;` -> corrected to `&copy;-->
+</div>
+</body>
+</html>
+
+
