@@ -1,0 +1,134 @@
+/* Basic Reset */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Header Styling */
+header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+header h1 {
+    text-decoration: underline; /* Text decoration on heading */
+}
+
+/* Navigation Bar Styling */
+nav {
+    background-color: #444;
+}
+
+nav ul {
+    list-style-type: none;
+    text-align: center;
+}
+
+nav li {
+    display: inline-block;
+}
+
+nav a {
+    display: block;
+    color: white;
+    padding: 12px 20px;
+    text-decoration: none;
+}
+
+/* Interactive Link States */
+nav a:visited {
+    color: #cccccc;
+}
+
+nav a:hover {
+    background-color: #555;
+    text-decoration: overline underline; /* Creative text-decoration on hover */
+}
+
+nav a:active {
+    background-color: #222;
+}
+
+/* Main Layout & Sections */
+main {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 0 15px;
+}
+
+section {
+    background: #fff;
+    margin-bottom: 20px;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+h2 {
+    color: #333;
+    margin-bottom: 10px;
+    text-decoration: underline;
+}
+
+/* Form Styling */
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.form-group label.inline {
+    display: inline;
+    font-weight: normal;
+    margin-right: 15px;
+}
+
+input[type="text"],
+input[type="email"] {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button[type="submit"] {
+    background-color: #333;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button[type="submit"]:hover {
+    background-color: #555;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 15px;
+    background-color: #333;
+    color: white;
+}
+
+/* Responsiveness (Media Query) */
+@media (max-width: 600px) {
+    nav li {
+        display: block;
+    }
+}
