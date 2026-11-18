@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Campus Bookstore</title>
+  <!-- Part 2 (Step 8): Loaded both Roboto and Merriweather in a single Google Fonts link -->
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <!-- Fixed Error 1 (shop.html, Line 7): Changed rel="stylesheets" to rel="stylesheet" -->
+  <link rel="stylesheet" href="shop.css">
+</head>
+<body>
+  <!-- Error 1 (shop.html, Line 7): Typo in attribute rel="stylesheets", corrected to rel="stylesheet". -->
+  <!-- Error 2 (shop.html, Line 10): <style> element placed inside <body> instead of <head>; moved styles to shop.css. -->
+  <!-- Error 3 (shop.html, Line 17): Invalid CSS syntax style="color=#1B4F72;" using '=' instead of ':'. -->
+  <!-- Error 4 (shop.css, Line 2): Missing 'Roboto' font-family declaration on body. -->
+  <!-- Error 5 (shop.css, Line 4): Missing background-repeat: no-repeat for paper.gif. -->
+  <!-- Error 6 (shop.css, Line 5): Missing background-position: top right for background image. -->
+  <!-- Error 7 (shop.css, Line 9): Missing list-style-type: none on navigation ul. -->
+  <!-- Error 8 (shop.css, Line 14): Missing float: left (or flex) on li to make menu horizontal. -->
+  <!-- Error 9 (shop.css, Line 22): Missing border-collapse: collapse on table for single borders. -->
+  <!-- Error 10 (shop.css, Line 28): Invalid/missing nth-child(even) selector for grey even rows and hover states. -->
+
+  <!-- Part 2 (Step 5): Semantic structure using header, nav, main, and footer -->
+  <header>
+    <h1>Campus Bookstore</h1>
+  </header>
+
+  <nav>
+    <ul>
+      <!-- Part 2 (Step 6): Added .active class to Home link -->
+      <li><a class="active" href="#home">Home</a></li>
+      <li><a href="#books">Books</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <p>Textbooks, stationery and more for every student.</p>
+
+    <table id="product">
+      <thead>
+        <tr>
+          <th>Item</th>
+          <th>Category</th>
+          <th>Price (RM)</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Web Design Basics</td>
+          <td>Textbook</td>
+          <td>45.00</td>
+        </tr>
+        <tr>
+          <td>A4 Notebook</td>
+          <td>Stationery</td>
+          <td>6.50</td>
+        </tr>
+        <tr>
+          <td>USB Drive 32GB</td>
+          <td>Gadget</td>
+          <td>25.00</td>
+        </tr>
+        <tr>
+          <td>Highlighter Set</td>
+          <td>Stationery</td>
+          <td>9.90</td>
+        </tr>
+      </tbody>
+    </table>
+  </main>
+
+  <footer>&copy; 2026 Campus Bookstore</footer>
+</body>
+</html>

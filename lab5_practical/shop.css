@@ -1,0 +1,109 @@
+/* General Page Styling and Background Image */
+body {
+  font-family: 'Roboto', sans-serif;
+  background-image: url("paper.gif");
+  background-repeat: no-repeat;
+  background-position: top right;
+  margin: 0;
+  padding: 0;
+}
+
+/* Header Section with Cover Background and Merriweather Font */
+header {
+  background-image: url("paper.gif"); /* Replace with a banner image if provided in lab assets */
+  background-color: #1B4F72;
+  background-size: cover;
+  background-position: center;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+header h1 {
+  font-family: 'Merriweather', serif;
+  color: #ffffff;
+  margin: 0;
+}
+
+/* Horizontal Navigation Bar */
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333333;
+}
+
+nav li {
+  float: left;
+}
+
+nav li a {
+  display: block;
+  color: #ffffff;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Navigation Hover and Active Link Styling */
+nav li a:hover:not(.active) {
+  background-color: #111111;
+}
+
+.active {
+  background-color: #04AA6D;
+}
+
+/* Main Content Area and Paragraph Line Height */
+main {
+  padding: 20px;
+}
+
+p {
+  line-height: 1.6;
+}
+
+/* Product Table Layout, Borders, and Zebra Striping */
+#product {
+  border-collapse: collapse;
+  width: 100%;
+  margin-top: 15px;
+}
+
+#product td,
+#product th {
+  border: 1px solid #dddddd;
+  padding: 8px;
+}
+
+#product tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+#product tr:hover {
+  background-color: #dddddd;
+}
+
+/* Table Header Styling */
+#product th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: center;
+  text-transform: uppercase;
+  background-color: #1B4F72;
+  color: #ffffff;
+}
+
+/* Right-Align the Price Column (3rd Column) */
+#product td:nth-child(3) {
+  text-align: right;
+}
+
+/* Footer Styling */
+footer {
+  background-color: #f1f1f1;
+  color: #333333;
+  text-align: center;
+  padding: 15px;
+  margin-top: 30px;
+}
